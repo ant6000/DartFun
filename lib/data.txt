@@ -10,3 +10,5 @@ horilal,456
 jony,789 
 badhon,123
 joy,123
+hello@abc.com,123456
+hello@aaa.com,456789
