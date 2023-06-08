@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  String FirstName = "100";
-  String LastNaame = "Chakraborty";
+  String firstName = "100";
+  String lastNaame = "Chakraborty";
 
-  String FullName = FirstName + LastNaame;
-  stdout.write('FullName is ${FullName.toUpperCase()}');
+  String fullName = firstName + lastNaame;
+  stdout.write('FullName is ${fullName.toUpperCase()}');
 
-  double b = double.parse(FirstName);
-  print(b + int.parse(FirstName));
+  double b = double.parse(firstName);
+  print(b + int.parse(lastNaame));
   
 }

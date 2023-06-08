@@ -20,7 +20,6 @@ class UserCreationImp implements UserCreation {
   List<UserModel> userList = [];
   @override
   void addUser(UserModel userModel) {
-    // TODO: implement addUser
 
     userList.add(userModel);
     print("User Create done in ${userList.length}");
@@ -30,7 +29,6 @@ class UserCreationImp implements UserCreation {
   void checkPasswordValid(String password) {
     bool isCap = false;
     bool isLow = false;
-    // TODO: implement checkPasswordValid
     for (int i = 0; i < password.length; i++) {
       if (password[i].codeUnits.first >= 65 &&
           password[i].codeUnits.first <= 90) {
@@ -50,7 +48,6 @@ class UserCreationImp implements UserCreation {
 
   @override
   void findUser(UserModel userModel) {
-    // TODO: implement findUser
     final checkUser = userList.indexWhere((element) =>
         element.userName == userModel.userName &&
         element.psssword == userModel.psssword);
@@ -67,14 +64,12 @@ class AdminCreationImp implements UserCreation{
   List<UserModel> adminList = [];
   @override
   void addUser(UserModel userModel) {
-    // TODO: implement addUser
     adminList.add(userModel);
     print("Admin Create done in ${adminList.length}");
   }
 
   @override
   void checkPasswordValid(String password) {
-    // TODO: implement checkPasswordValid
 
     bool isCap = false;
     bool isLow = false;
@@ -97,7 +92,6 @@ class AdminCreationImp implements UserCreation{
 
   @override
   void findUser(UserModel userModel) {
-    // TODO: implement findUser
 
     final checkUser = adminList.indexWhere((element) =>
     element.userName == userModel.userName &&

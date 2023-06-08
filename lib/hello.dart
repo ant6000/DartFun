@@ -22,7 +22,7 @@ abstract class BaseMethods{
   void showStudents();
 }
 
-class studentRepo implements BaseMethods{
+class StudentRepo implements BaseMethods{
   List<Student> studentList = [];
   @override
   void addStudents(Student student) {
@@ -57,7 +57,7 @@ class StudentController{
   }
 }
 void main(List<String> args) {
-  StudentController controller = StudentController(studentRepo());
+  StudentController controller = StudentController(StudentRepo());
   controller.addStudents(Student(1, "Rahim", "12345", Address(1, 'B-12', "Dhanmondi", "Dhaka", "Dhaka")));
   controller.addStudents(Student(2, "Karim", "12345", Address(2, 'B-15', "Dhanmondi", "Dhaka", "Dhaka")));
   controller.addStudents(Student(3, "Jamal", "12345", Address(1, 'B-10', "Dhanmondi", "Dhaka", "Dhaka")));

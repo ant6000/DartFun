@@ -8,9 +8,9 @@ class Student {
 
 // Address is a model class
 class Address {
-  int? id, house_no;
+  int? id, houseNo;
   String? thana, district, divission;
-  Address(this.id,this.house_no, this.thana, this.district, this.divission);
+  Address(this.id,this.houseNo, this.thana, this.district, this.divission);
 }
 
 // Abstract class
