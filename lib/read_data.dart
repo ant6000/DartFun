@@ -6,7 +6,9 @@ void main() {
 
   if (file.existsSync()) {
     List<String> lines = file.readAsLinesSync();
-    lines.forEach((line) => print(line));
+    for (var line in lines) {
+      print(line);
+    }
   } else {
     print('File not found: $filepath');
   }

@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:dart_basics/main_menu.dart';
 
 void services() {
-  var input;
+  String? input;
   print('[1] Deposit money');
   print('[2] Withdraw money');
   print('[3] Transfer money');

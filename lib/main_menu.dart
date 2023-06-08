@@ -5,7 +5,7 @@ import 'package:dart_basics/login_menu.dart';
 import 'package:dart_basics/services.dart';
 
 void main() {
-  var input;
+  String? input;
   print('##########################################################');
   print('#                     WELCOME                            #');
   print('#                       TO                               #');
